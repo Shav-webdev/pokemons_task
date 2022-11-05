@@ -1,0 +1,40 @@
+@import "src/styles/colors";
+@import "src/styles/mixins";
+
+.table {
+  width: 100%;
+  margin-top: 40px;
+  @include fontSize(14);
+  .thead {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    @include fontSize(14);
+  }
+  th {
+    color: $gray100;
+    background-color: $gray500;
+  }
+  th {
+    padding: 18px 20px 18px 30px;
+    line-height: 1.4;
+  }
+  td {
+    height: 40px;
+    line-height: 40px;
+    img {
+      width: 40px;
+      height: 40px;
+      &.avatar {
+        width: 75px;
+        height: 75px;
+      }
+    }
+  }
+  th,
+  td {
+    text-align: left;
+    padding-inline-start: 30px;
+    border-bottom: 1px solid $gray300;
+  }
+}

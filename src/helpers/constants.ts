@@ -1,0 +1,1 @@
+export const NUMBER_OF_POKEMONS_PER_PAGE = 10;

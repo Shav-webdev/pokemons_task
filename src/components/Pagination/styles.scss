@@ -1,0 +1,24 @@
+@import 'styles/colors';
+
+.pagination {
+  margin-top: 20px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  .pagination-link {
+    padding: 0 4px;
+    transition: all 0.1s linear;
+    color: inherit;
+    cursor: pointer;
+    &.active {
+      text-decoration: underline;
+    }
+    &:hover,
+    .active {
+      color: $darkBlue;
+    }
+  }
+  &.hide {
+    height: 16px;
+  }
+}
